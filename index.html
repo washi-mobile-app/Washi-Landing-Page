@@ -1,0 +1,802 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>Washi</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="assets\img\favicon.png">
+
+    <!-- ***** All CSS Files ***** -->
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets\css\style.css">
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="assets\css\responsive.css">
+
+</head>
+
+<body class="homepage-5">
+    <!--====== Preloader Area Start ======-->
+    <div class="preloader-main">
+        <div class="preloader-wapper">
+            <svg class="preloader" xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="200">
+                <defs>
+                    <filter id="goo" x="-40%" y="-40%" height="200%" width="400%">
+                        <fegaussianblur in="SourceGraphic" stddeviation="10" result="blur"></fegaussianblur>
+                        <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -8" result="goo"></fecolormatrix>
+                    </filter>
+                </defs>
+                <g filter="url(#goo)">
+                    <circle class="dot" cx="50" cy="50" r="25" fill="#8731E8"></circle>
+                    <circle class="dot" cx="50" cy="50" r="25" fill="#8731E8"></circle>
+                </g>
+            </svg>
+            <div>
+                <div class="loader-section section-left"></div>
+                <div class="loader-section section-right"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== Scroll To Top Area Start ======-->
+    <div id="scrollUp" title="Scroll To Top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!--====== Scroll To Top Area End ======-->
+
+    <div class="main">
+        <!-- ***** Header Start ***** -->
+        <header class="navbar navbar-sticky navbar-expand-lg navbar-dark">
+            <div class="container position-relative">
+                <a class="navbar-brand" href="index.html">
+                    <img class="navbar-brand-regular" src="assets\img\logo\logo-white.png" alt="brand-logo">
+                    <img class="navbar-brand-sticky" src="assets\img\logo\logo.png" alt="sticky brand-logo">
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-inner">
+                    <!--  Mobile Menu Toggler -->
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav>
+                        <ul class="navbar-nav" id="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#features">Características</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#funcion">¿Como funciona?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#pricing">Precios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#contact">Contáctenos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <a href="https://washi.netlify.app/" target="_blank" class="btn sApp-btn">Empieza a usar Washi</a>
+            </div>
+        </header>
+        <!-- ***** Header End ***** -->
+
+        <!-- ***** Welcome Area Start ***** -->
+        <section id="home" class="section welcome-area bg-overlay d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-12 col-lg-12">
+                        <h1 class="text-white center">Una plataforma que ofrece servicios de lavanderia</h1>
+                        <p class="text-white my-4 center">Washi, aplicación creada por Mizetto, tiene el propósito de ayudar a sus usuarios a hacer contacto con lavanderías cerca a su hogar para un servicio más eficiente y personalizado. La plataforma funciona en Lima Metropolitana, con
+                            la aspiración de expandirse a todo el Perú. Washi promueve a las pequeñas y medianas empresas, dándoles un impulso a un público dirigido geográficamente</p>
+
+                    </div>
+                    <!-- Welcome Intro Start -->
+                    <div class="col-6 col-lg-6">
+                        <div class="welcome-intro">
+                            <h3 class="text-white center">Manten tu ropa limpia con solo un click</p>
+                                <!-- Store Buttons -->
+                                <div class="button-group store-buttons d-flex">
+                                    <a href="#features-washi" class="btn sApp-btn text-uppercase">Mas informacion</a>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-6">
+                        <div class="welcome-intro">
+                            <h3 class="text-white center">Agrega tu lavandería a nuestra plataforma</p>
+                                <!-- Store Buttons -->
+                                <div class="button-group store-buttons d-flex">
+                                    <a href="#features-washer" class="btn sApp-btn text-uppercase">Mas informacion</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Shape Bottom -->
+            <div class="shape-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 100" preserveaspectratio="none">
+                    <path class="shape-fill" fill="#FFFFFF" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7  c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4  c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                </svg>
+            </div>
+        </section>
+        <!-- ***** Welcome Area End ***** -->
+
+        <!-- ***** Features Area Start ***** -->
+        <section id="features-washi" class="section features-area style-two overflow-hidden ptb_100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-10 col-lg-6">
+                        <!-- Section Heading -->
+                        <div class="section-heading">
+                            <span class="d-inline-block rounded-pill shadow-sm fw-5 px-4 py-2 mb-3">
+                                <i class="far fa-lightbulb text-primary mr-1"></i>
+                                <span class="text-primary">Caracteristicas</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 my-3 res-margin">
+                        <!-- Image Box -->
+                        <div class="image-box text-center icon-1 p-5 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.4s">
+                            <!-- Featured Image -->
+                            <div class="featured-img mb-3">
+                                <img class="avatar-sm" src="assets\img\icon\featured-img\mapa.png" alt="">
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Encuentra lavanderías cercanas a tu ubicación.&nbsp;</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-3 res-margin">
+                        <!-- Image Box -->
+                        <div class="image-box text-center icon-1 p-5 wow fadeInUp" data-aos-duration="2s" data-wow-delay="0.2s">
+                            <!-- Featured Image -->
+                            <div class="featured-img mb-3">
+                                <img class="avatar-sm" src="assets\img\icon\featured-img\cupon.png" alt="">
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Visualiza promociones y ofertas especiales para ti.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-3 res-margin">
+                        <!-- Image Box -->
+                        <div class="image-box text-center icon-1 p-5 wow fadeInRight" data-aos-duration="2s" data-wow-delay="0.4s">
+                            <!-- Featured Image -->
+                            <div class="featured-img mb-3">
+                                <img class="avatar-sm" src="assets\img\icon\featured-img\opinion.png" alt="">
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">vista de reseñas y recomendaciones sobre las lavanderías </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-3 res-margin">
+                        <!-- Image Box -->
+                        <div class="image-box text-center icon-1 p-5 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.8s">
+                            <!-- Featured Image -->
+                            <div class="featured-img mb-3">
+                                <img class="avatar-sm" src="assets\img\icon\featured-img\seguimiento.png" alt="">
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Información y/o seguimiento del estado de su servicio.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-3 res-margin">
+                        <!-- Image Box -->
+                        <div class="image-box text-center icon-1 p-5 wow fadeInUp" data-aos-duration="2s" data-wow-delay="0.4s">
+                            <!-- Featured Image -->
+                            <div class="featured-img mb-3">
+                                <img class="avatar-sm" src="assets\img\icon\featured-img\lista-de-verificacion.png" alt="">
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Realiza los retos dentro de la app y recibe ofertas exclusivas</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-3">
+                        <!-- Image Box -->
+                        <div class="image-box text-center icon-1 p-5 wow fadeInRight" data-aos-duration="2s" data-wow-delay="0.8s">
+                            <!-- Featured Image -->
+                            <div class="featured-img mb-3">
+                                <img class="avatar-sm" src="assets\img\icon\featured-img\filtrar.png" alt="">
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Filtra lavanderías por: tipo de lavado, precio, etc.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Features Area End ***** -->
+
+        <!-- ***** Work Area Start ***** -->
+        <section class="section work-area bg-overlay overflow-hidden ptb_100" id="funcion">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-6">
+                        <!-- Work Content -->
+                        <div class="work-content text-center">
+                            <h2 class="text-white">¿Como funciona Washi?</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <!-- Single Work -->
+                        <div class="single-work text-center p-3">
+                            <!-- Work Icon -->
+                            <div class="work-icon">
+                                <img class="avatar-md" src="assets\img\icon\work\web.png" alt="">
+                            </div>
+                            <h3 class="text-white py-3">Entra a www.washi.com</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <!-- Single Work -->
+                        <div class="single-work text-center p-3">
+                            <!-- Work Icon -->
+                            <div class="work-icon">
+                                <img class="avatar-md" src="assets\img\icon\work\sign-in.png" alt="">
+                            </div>
+                            <h3 class="text-white py-3">Regístrate o inicia sesion</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <!-- Single Work -->
+                        <div class="single-work text-center p-3">
+                            <!-- Work Icon -->
+                            <div class="work-icon">
+                                <img class="avatar-md" src="assets\img\icon\work\product.png" alt="">
+                            </div>
+                            <h3 class="text-white py-3">selecciona una lavanderia</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <!-- Single Work -->
+                        <div class="single-work text-center p-3">
+                            <!-- Work Icon -->
+                            <div class="work-icon">
+                                <img class="avatar-md" src="assets\img\icon\work\tick.png" alt="">
+                            </div>
+                            <h3 class="text-white py-3">solicita su servicio, paga y listo!</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center" id="about-product">
+                    <div class="col-12 col-lg-6">
+                        <!-- Work Content -->
+                        <div class="work-content text-center">
+                            <iframe width="600" height="355" src="https://www.youtube.com/embed/TPU0PgJgQKk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Work Area End ***** -->
+        <!-- ***** Download Area Start ***** -->
+        <section class="section download-area overlay-dark ptb_100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-8">
+                        <!-- Download Text -->
+                        <div class="download-text text-center">
+                            <h2 class="text-white">Proximamente</h2>
+                            <!-- Store Buttons -->
+                            <div class="button-group store-buttons d-flex justify-content-center">
+                                <a href="#">
+                                    <img src="assets\img\icon\google-play.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="assets\img\icon\app-store.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Download Area End ***** -->
+
+        <!-- ***** Testimonial Area Start ***** -->
+        <section class="section testimonial-area ptb_100">
+            <div class="container text-center">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-12 col-md-10 col-lg-8">
+                        <div class="testimonials owl-carousel">
+                            <!-- Single Testimonial -->
+                            <div class="single-testimonial p-3 p-md-5">
+                                <img src="assets\img\avatar\avatar-1.png" class="mx-auto d-block" alt="">
+                                <!-- Client Name -->
+                                <h3 class="client-name mt-4 mb-2">John Doe</h3>
+                                <!-- Client Address -->
+                                <h5 class="client-address fw-4">San Isidro, Lima</h5>
+                                <!-- Client Rating -->
+                                <div class="client-rating mt-2 mb-3">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <!-- Client Description -->
+                                <div class="client-description">
+                                    <!-- Client Text -->
+                                    <div class="client-text">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Testimonial -->
+                            <div class="single-testimonial p-3 p-md-5">
+                                <img src="assets\img\avatar\avatar-2.png" class="mx-auto d-block" alt="">
+                                <!-- Client Name -->
+                                <h3 class="client-name mt-4 mb-2">Jassica William</h3>
+                                <!-- Client Address -->
+                                <h5 class="client-address fw-4">Magdalena, Lima</h5>
+                                <!-- Client Rating -->
+                                <div class="client-rating mt-2 mb-3">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <!-- Client Description -->
+                                <div class="client-description">
+                                    <!-- Client Text -->
+                                    <div class="client-text">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Testimonial -->
+                            <div class="single-testimonial p-3 p-md-5">
+                                <img src="assets\img\avatar\avatar-3.png" class="mx-auto d-block" alt="">
+                                <!-- Client Name -->
+                                <h3 class="client-name mt-4 mb-2">Johnson Smith</h3>
+                                <!-- Client Address -->
+                                <h5 class="client-address fw-4">Surco, Lima</h5>
+                                <!-- Client Rating -->
+                                <div class="client-rating mt-2 mb-3">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <!-- Client Description -->
+                                <div class="client-description">
+                                    <!-- Client Text -->
+                                    <div class="client-text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Testimonial Area End ***** -->
+
+        <!-- ***** Features Area Start ***** -->
+        <section id="features-washer" class="section features-area style-two overflow-hidden ptb_100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-10 col-lg-6">
+                        <!-- Section Heading -->
+                        <div class="section-heading">
+                            <span class="d-inline-block rounded-pill shadow-sm fw-5 px-4 py-2 mb-3">
+                                <i class="far fa-lightbulb text-primary mr-1"></i>
+                                <span class="text-primary">Beneficios</span>
+                            </span>
+                            <h2>Beneficios de pertenecer a nuestra plataforma</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 my-3 res-margin">
+                        <!-- Image Box -->
+                        <div class="image-box text-center icon-1 p-5 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.4s">
+                            <!-- Featured Image -->
+                            <div class="featured-img mb-3">
+                                <img class="avatar-sm" src="assets\img\icon\featured-img\venta.png" alt="">
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Incrementa tus ventas &nbsp;</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-3 res-margin">
+                        <!-- Image Box -->
+                        <div class="image-box text-center icon-1 p-5 wow fadeInUp" data-aos-duration="2s" data-wow-delay="0.2s">
+                            <!-- Featured Image -->
+                            <div class="featured-img mb-3">
+                                <img class="avatar-sm" src="assets\img\icon\featured-img\clientes.png" alt="">
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Obten más clientes &nbsp;</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-3 res-margin">
+                        <!-- Image Box -->
+                        <div class="image-box text-center icon-1 p-5 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.8s">
+                            <!-- Featured Image -->
+                            <div class="featured-img mb-3">
+                                <img class="avatar-sm" src="assets\img\icon\featured-img\contactoCliente.png" alt="">
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Facil contacto con el cliente</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Features Area End ***** -->
+        <!-- ***** Price Plan Area Start ***** -->
+        <section id="pricing" class="section price-plan-area bg-gray overflow-hidden ptb_100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-7">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center">
+                            <h2>Suscribe tu lavanderia</h2>
+                            <p class="d-none d-sm-block mt-4">Mira nuestros precios para "Proveedor Plus"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-10 col-lg-8">
+                        <div class="row price-plan-wrapper">
+                            <div class="col-12 col-md-6">
+                                <!-- Single Price Plan -->
+                                <div class="single-price-plan text-center p-5 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.4s">
+                                    <!-- Plan Thumb -->
+                                    <div class="plan-thumb">
+                                        <img class="avatar-lg" src="assets\img\pricing\basic.png" alt="">
+                                    </div>
+                                    <!-- Plan Title -->
+                                    <div class="plan-title my-2 my-sm-3">
+                                        <h3 class="text-uppercase">Plus</h3>
+                                    </div>
+                                    <!-- Plan Price -->
+                                    <div class="plan-price pb-2 pb-sm-3">
+                                        <h1 class="color-primary"><small class="fw-7">S/.</small>180</h1>
+                                    </div>
+                                    <!-- Plan Description -->
+                                    <div class="plan-description">
+                                        <ul class="plan-features">
+                                            <li class="border-top py-3">Ser parte de nuestra plataforma</li>
+                                            <li class="border-top py-3">Soporte 24/7</li>
+                                        </ul>
+                                    </div>
+                                    <!-- Plan Button -->
+                                    <div class="plan-button">
+                                        <a href="#contact-form" class="btn mt-4">Regístrate</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 mt-4 mt-md-0">
+                                <!-- Single Price Plan -->
+                                <div class="single-price-plan text-center p-5 wow fadeInRight" data-aos-duration="2s" data-wow-delay="0.4s">
+                                    <!-- Plan Thumb -->
+                                    <div class="plan-thumb">
+                                        <img class="avatar-lg" src="assets\img\pricing\premium.png" alt="">
+                                    </div>
+                                    <!-- Plan Title -->
+                                    <div class="plan-title my-2 my-sm-3">
+                                        <h3 class="text-uppercase">Ultra Plus</h3>
+                                    </div>
+                                    <!-- Plan Price -->
+                                    <div class="plan-price pb-2 pb-sm-3">
+                                        <h1 class="color-primary"><small class="fw-7">S/.</small>300</h1>
+                                    </div>
+                                    <!-- Plan Description -->
+                                    <div class="plan-description">
+                                        <ul class="plan-features">
+                                            <li class="border-top py-3">Ser parte de nuestra plataforma</li>
+                                            <li class="border-top py-3">Soporte 24/7</li>
+                                            <li class="border-top border-bottom py-3">Aparecer entre los mas recomendados de su distrito</li>
+                                            <li class="border-top border-bottom py-3">Aparicion en los videos promocionales</li>
+                                        </ul>
+                                    </div>
+                                    <!-- Plan Button -->
+                                    <div class="plan-button">
+                                        <a href="#contact-form" class="btn mt-4">Regístrate</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Price Plan Area End ***** -->
+
+        <!-- ***** Team Area Start ***** -->
+        <section class="section team-area team-style-two overflow-hidden ptb_100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-6">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center">
+                            <h2 class="text-capitalize">Equipo de desarrollo</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1 col-lg-1">
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+                        <!-- Single Team -->
+                        <div class="single-team text-center radius-100 overflow-hidden m-2 m-lg-0">
+                            <!-- Team Thumb -->
+                            <div class="team-thumb radius-100 d-inline-block position-relative overflow-hidden">
+                                <img src="assets\img\avatar\Flavio.png" alt="">
+                                <!-- Team Overlay -->
+                                <div class="team-overlay radius-100">
+                                    <h4 class="team-name text-white">Flavio Savedra</h4>
+                                    <!-- Team Icons -->
+                                    <div class="team-icons">
+                                        <a class="p-2" href="#"><i class="fab fa-twitter"></i></a>
+                                        <a class="p-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+                        <!-- Single Team -->
+                        <div class="single-team text-center radius-100 overflow-hidden m-2 m-lg-0">
+                            <!-- Team Thumb -->
+                            <div class="team-thumb radius-100 d-inline-block position-relative overflow-hidden">
+                                <img src="assets\img\avatar\cledmir.png" alt="">
+                                <!-- Team Overlay -->
+                                <div class="team-overlay radius-100">
+                                    <h4 class="team-name text-white">CLedmir Tejada</h4>
+                                    <!-- Team Icons -->
+                                    <div class="team-icons">
+                                        <a class="p-2" href="#"><i class="fab fa-twitter"></i></a>
+                                        <a class="p-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+                        <!-- Single Team -->
+                        <div class="single-team text-center radius-100 overflow-hidden m-2 m-lg-0">
+                            <!-- Team Thumb -->
+                            <div class="team-thumb radius-100 d-inline-block position-relative overflow-hidden">
+                                <img src="assets\img\avatar\marcio.png" alt="">
+                                <!-- Team Overlay -->
+                                <div class="team-overlay radius-100">
+                                    <h4 class="team-name text-white">Marcio Begazo</h4>
+                                    <!-- Team Icons -->
+                                    <div class="team-icons">
+                                        <a class="p-2" href="#"><i class="fab fa-twitter"></i></a>
+                                        <a class="p-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+                        <!-- Single Team -->
+                        <div class="single-team text-center radius-100 overflow-hidden m-2 m-lg-0">
+                            <!-- Team Thumb -->
+                            <div class="team-thumb radius-100 d-inline-block position-relative overflow-hidden">
+                                <img src="assets\img\avatar\sebastian.png" alt="">
+                                <!-- Team Overlay -->
+                                <div class="team-overlay radius-100">
+                                    <h4 class="team-name text-white">Sebastián Bravo</h4>
+                                    <!-- Team Icons -->
+                                    <div class="team-icons">
+                                        <a class="p-2" href="#"><i class="fab fa-twitter"></i></a>
+                                        <a class="p-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+                        <!-- Single Team -->
+                        <div class="single-team text-center radius-100 overflow-hidden m-2 m-lg-0">
+                            <!-- Team Thumb -->
+                            <div class="team-thumb radius-100 d-inline-block position-relative overflow-hidden">
+                                <img src="assets\img\avatar\ivan.png" alt="">
+                                <!-- Team Overlay -->
+                                <div class="team-overlay radius-100">
+                                    <h4 class="team-name text-white">Ivan López</h4>
+                                    <!-- Team Icons -->
+                                    <div class="team-icons">
+                                        <a class="p-2" href="#"><i class="fab fa-twitter"></i></a>
+                                        <a class="p-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-lg-1">
+                    </div>
+                </div>
+                <div class="row justify-content-center" id="about-team">
+                    <div class="col-12 col-md-10 col-lg-6">
+                        <iframe width="600" height="355" src="https://www.youtube.com/embed/x_ytsG_qpxE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Team Area End ***** -->
+
+        <!-- ***** Subscribe Area Start ***** -->
+        <section class="section subscribe-area ptb_100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-7">
+                        <div class="subscribe-content text-center">
+                            <h2>Suscribete y enterate de todas las novedades</h2>
+                            <!-- Subscribe Form -->
+                            <form class="subscribe-form">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu correo electronico">
+                                </div>
+                                <button type="submit" class="btn btn-lg btn-block">Suscribirse</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Subscribe Area End ***** -->
+
+        <!--====== Contact Area Start ======-->
+        <section id="contact" class="contact-area bg-gray ptb_100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-6">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center">
+                            <h2 class="text-capitalize">Contáctenos</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-5">
+                        <!-- Contact Us -->
+                        <div class="contact-us">
+                            <p class="mb-3">si necesitas mas informacion sobre los pagos o sobre las funcionalidades, no dudes en dejarnos un mensaje.</p>
+                            <ul>
+                                <li class="py-2">
+                                    <a class="media" href="#">
+                                        <div class="social-icon mr-3">
+                                            <i class="fas fa-home"></i>
+                                        </div>
+                                        <span class="media-body align-self-center">UPC, lima, Perú</span>
+                                    </a>
+                                </li>
+                                <li class="py-2">
+                                    <a class="media" href="#">
+                                        <div class="social-icon mr-3">
+                                            <i class="fas fa-phone-alt"></i>
+                                        </div>
+                                        <span class="media-body align-self-center">+51 01 964 852 123</span>
+                                    </a>
+                                </li>
+                                <li class="py-2">
+                                    <a class="media" href="#">
+                                        <div class="social-icon mr-3">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <span class="media-body align-self-center">soporte@washi.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 pt-4 pt-md-0">
+                        <!-- Contact Box -->
+                        <div class="contact-box text-center">
+                            <!-- Contact Form -->
+                            <form id="contact-form" method="POST" action="assets/php/mail.php">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" placeholder="Nombre" required="required">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subject" placeholder="Sujeto" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" placeholder="Mensaje" required="required"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-lg btn-block mt-3"><span class="text-white pr-3"><i class="fas fa-paper-plane"></i></span>Enviar</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <p class="form-message"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--====== Contact Area End ======-->
+
+        <!--====== Height Emulator Area Start ======-->
+        <div class="height-emulator d-none d-lg-block"></div>
+        <!--====== Height Emulator Area End ======-->
+
+        <!--====== Footer Area Start ======-->
+        <footer class="footer-area footer-fixed">
+            <!-- Footer Top -->
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Copyright Area -->
+                            <div class="copyright-area d-flex flex-wrap justify-content-center justify-content-sm-between text-center py-4">
+                                <!-- Copyright Left -->
+                                <div class="copyright-left">&copy; Copyrights 2020 mizzeto All rights reserved.</div>
+                                <!-- Copyright Right -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--====== Footer Area End ======-->
+    </div>
+
+
+    <!-- ***** All jQuery Plugins ***** -->
+
+    <!-- jQuery(necessary for all JavaScript plugins) -->
+    <script src="assets\js\jquery\jquery-3.3.1.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="assets\js\bootstrap\popper.min.js"></script>
+    <script src="assets\js\bootstrap\bootstrap.min.js"></script>
+
+    <!-- Plugins js -->
+    <script src="assets\js\plugins\plugins.min.js"></script>
+
+    <!-- Active js -->
+    <script src="assets\js\active.js"></script>
+</body>
+
+</html>
